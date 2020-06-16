@@ -1,5 +1,0 @@
-# Config files
-config*.json
-!config.ex.json
-_config*.scss
-!_config.ex.scss

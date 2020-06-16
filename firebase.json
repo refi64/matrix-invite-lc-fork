@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "target": "invites",
+    "public": "frontend/build",
+    "ignore": [
+      "config.ex.json",
+      "packages/**",
+      "**/.*"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

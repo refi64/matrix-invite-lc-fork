@@ -1,0 +1,23 @@
+name: Deploy to Firebase
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Deploy to Firebase
+    runs-on: ubuntu-latest
+    container: google/dart:2.8
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v1
+      - name: Build the website
+        run: pub get && webdev build
+        working-directory: frontend
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@v1.3.1
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}

@@ -1,3 +1,8 @@
+# DO NOT USE THIS
+
+This is a custom fork with some public config files for Linux Cafe. If you want to use
+matrix-invite-panel, use [the main repo](https://github.com/refi64/matrix-invite-panel).
+
 # matrix-invite-panel
 
 An invite token system for Synapse, inspired by

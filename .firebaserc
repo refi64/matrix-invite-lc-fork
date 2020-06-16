@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "linuxcafe-chat"
+  },
+  "targets": {
+    "linuxcafe-chat": {
+      "hosting": {
+        "invites": [
+          "invites"
+        ]
+      }
+    }
+  }
+}

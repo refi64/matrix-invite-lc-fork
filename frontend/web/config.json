@@ -1,0 +1,7 @@
+{
+  "backend": "https://invites-backend.linuxcafe.chat/",
+  "homeserver": {
+    "url": "https://linuxcafe.chat",
+    "name": "linuxcafe.chat"
+  }
+}
