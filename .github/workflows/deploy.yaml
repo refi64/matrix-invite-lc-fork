@@ -13,7 +13,7 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v1
       - name: Build the website
-        run: pub get && pub run build_runner build
+        run: pub global activate webdev && pub get && webdev build
         working-directory: frontend
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@v1.3.1

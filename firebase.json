@@ -4,6 +4,7 @@
     "public": "frontend/build",
     "ignore": [
       "config.ex.json",
+      "config.ex.scss",
       "packages/**",
       "**/.*"
     ],
@@ -11,6 +12,17 @@
       {
         "source": "**",
         "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/",
+        "headers": [
+          {
+            "key": "Link",
+            "value": "</main.dart.js>;rel=preload;as=script,</styles.css>;rel=preload;as=style,<https://fonts.googleapis.com>;rel=preconnect"
+          }
+        ]
       }
     ]
   }
