@@ -5,8 +5,8 @@
   "targets": {
     "linuxcafe-chat": {
       "hosting": {
-        "invites": [
-          "invites"
+        "linuxcafe-invites": [
+          "linuxcafe-invites"
         ]
       }
     }

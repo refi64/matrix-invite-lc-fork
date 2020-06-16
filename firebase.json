@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "target": "invites",
+    "target": "linuxcafe-invites",
     "public": "frontend/build",
     "ignore": [
       "config.ex.json",
